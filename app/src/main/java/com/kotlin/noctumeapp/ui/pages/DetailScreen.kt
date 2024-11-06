@@ -20,5 +20,7 @@ fun DetailScreen(id: Int) {
     }
     if (anime != null) {
         Text(text = anime!!.synopsis, fontSize = 20.sp)
+    } else {
+        Text(text = "Anime not found")
     }
 }

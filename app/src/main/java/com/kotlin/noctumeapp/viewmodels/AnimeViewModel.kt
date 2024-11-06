@@ -37,7 +37,7 @@ class AnimeViewModel : ViewModel() {
                 val response = repository.getDetailsById(id)
                 if (response.isSuccessful) {
                     animeDetails.postValue(response.body())
-                    Log.d("AnimeViewModel", "Anime details fetched successfully")
+                    Log.d("AnimeViewModel", "anime response :" + response.body())
                 } else {
                     Log.e("AnimeViewModel", "Error fetching anime details: ${response.code()}")
                 }
